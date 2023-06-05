@@ -1,0 +1,15 @@
+<div class="container bg-light card py-5 shadow shadow-md  mt-5">
+  <h4 class="mx-auto">Añadir Producto</h4>
+  <!-- formulario para ingresar los datos de un nuevo producto -->
+  <form action="" class="d-flex flex-column justify-content-center align-items-center">
+    <label for="NombreProducto" id="" class=""> Nombre del producto </label>
+    <input type="text" class="form-control" id="NombreProducto" name="nombreProducto" [(ngModel)]="Producto.nombre">
+    <label for="PrecioProducto"  id="">Precio del producto</label>
+    <input type="number" class="form-control"  id="PrecioProducto" name="PrecioProducto" [(ngModel)] ="Producto.precio">
+    <label for="FechaExp">Fecha de expiracion</label>
+    <input type="date" class="form-control" id="FechaExp" name="fechaExpiracion" [(ngModel)]="Producto.fechaExpiracion">
+    <label for="Disponibilidad">Disponibilidad</label>
+    <input type="number" class="form-control" [(ngModel)] ="Producto.disponibilidad ">
+    <button (click)="AgregarProducto()" class="btn btn-primary mt-5 form-control fw-bold">Registrar</button>
+  </form>
+</div>
